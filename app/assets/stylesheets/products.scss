@@ -3,7 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* START_HIGHLIGHT */
+body {
+
+}
+
 .products {
+  background-color: #272b30;
+  color: #FFFFFF;
   table {
     border-collapse: collapse;
   }
@@ -26,7 +32,6 @@
     }
 
     dt {
-      color:        #244;
       font-weight:  bold;
       font-size:    larger;
     }
@@ -41,13 +46,16 @@
     text-align:   right;
     padding-left: 1em;
   }
+  .list_actions a {
+    color: #FFFFFF;
+  }
 
   .list_line_even {
-    background:   #e0f8f8;
+    background-color:   #272b30;
   }
 
   .list_line_odd {
-    background:   #f8b0f8;
+    background-color:   #c8c8c8;
   }
 }
 /* END_HIGHLIGHT */
