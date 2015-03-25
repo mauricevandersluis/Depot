@@ -16,7 +16,7 @@
 <body class="<%= controller.controller_name %>">
 <!-- START_HIGHLIGHT -->
   <div id="banner">
-    <%= image_tag("logo.png") %>
+    <a href="/"><%= image_tag("logo.png") %></a>
     <%= @page_title || "Pragmatic Bookshelf" %>
     <!-- <label id="code.depot.e.title"/> -->
   </div>
@@ -25,7 +25,8 @@
       <ul>
         <li><%= @time %></li>
         <li>&nbsp;</li>
-        <li><a href="http://www....">Home</a></li>
+        <li><%= link_to "Home", store_index_path %></li>
+        <li><%= link_to "Products", products_index_path %></li>
         <li><a href="http://www..../faq">Questions</a></li>
         <li><a href="http://www..../news">News</a></li>
         <li><a href="http://www..../contact">Contact</a></li>
