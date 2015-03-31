@@ -4,12 +4,24 @@
 
 /* START_HIGHLIGHT */
 .store {
+  .button {
+    color: #FFFFFF;
+    background-color: #000000;
+    border: 0;
+    border-radius: 4px;
+  }
+  .button:hover {
+    background-color: #272b30;
+  }
   h1 {
     margin: 0;
     padding-bottom: 0.5em;
     font:  150% sans-serif;
     color: #000000;
     border-bottom: 3px dotted #000000;
+    a:hover {
+      background-color: #FFFFFF;
+    }
   }
 
   /* An entry in the store catalog */
@@ -40,6 +52,9 @@
       margin-left: 100px;
       margin-top: 0.5em; 
       margin-bottom: 0.8em; 
+      form,div {
+        display: inline;
+      }
     }
 
     .price {

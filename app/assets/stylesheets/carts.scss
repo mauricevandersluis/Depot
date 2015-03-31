@@ -1,3 +1,102 @@
 // Place all the styles related to the Carts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* START_HIGHLIGHT */
+
+
+.carts {
+  background-color: #FFFFFF;
+  color: #000000;
+  
+  .item_price, .total_line {
+    text-align: right;
+  }
+  
+  .total_line, .total_cell {
+    font-weight: bold;
+    border-top: 1px solid #000000;
+    color: #000000;
+  }
+  .item_price {
+    width: 10%;
+  }
+  .total_text {
+    color: #000000;
+  }
+  
+  
+  table {
+    border-collapse: collapse;
+  }
+
+  table tr td {
+    padding: 5px;
+    vertical-align: top;
+    color: #FFFFFF;
+
+  }
+
+  .list_image {
+    width:  60px;
+    height: 70px;
+  }
+  .list_image_td {
+    width: 10%;
+  }
+
+  .list_description {
+    width: 70%;
+
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      font-weight:  bold;
+      font-size:    larger;
+    }
+
+    dd {
+      margin: 0;
+    }
+  }
+  .list_ammount {
+    width: 10%;
+  }
+
+  .list_actions {
+    font-size:    x-small;
+    text-align:   right;
+    padding-left: 1em;
+  }
+  .list_actions a {
+    color: #FFFFFF;
+  }
+
+  .list_line_even {
+    background-color:   #272b30;
+  }
+
+  .list_line_odd {
+    background-color:   #c8c8c8;
+  }
+  span {
+    .button {
+      color: #FFFFFF;
+      background-color: #000000;
+      border: 0;
+      border-radius: 4px;
+      float: left;
+      margin-right: 5px;
+      margin-top: 10px;
+    }
+    .button:hover {
+      background-color: #272b30;
+    }  
+  }
+}
+/* END_HIGHLIGHT */

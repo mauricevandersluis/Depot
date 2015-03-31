@@ -7,7 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Product.delete_all
 # . . .
-Product.create!(title: 'Programming Ruby 1.9 & 2.0',
+Product.create!(
+  title: 'Programming Ruby 1.9 & 2.0',
   description:
     %{<p>
     Ruby is the fastest growing and most exciting dynamic language
@@ -15,5 +16,6 @@ Product.create!(title: 'Programming Ruby 1.9 & 2.0',
     you should add Ruby to your toolbox.
     </p>},
   image_url: 'ruby.jpg',
-  price: 49.95)
+  price: 49.95
+)
 # . . .
