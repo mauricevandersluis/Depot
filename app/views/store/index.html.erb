@@ -4,9 +4,9 @@
 <% end %>
 
 <h1>Your Pragmatic Catalog | <%= @count_message %> |
-<% if session[:cart_id] != nil %>
+<!-- Disabled cart button, chapter 11 <% if session[:cart_id] != nil %>
   <a href="/carts/<%=session[:cart_id]%>"><img title="Show cart" border="0" height="20px" src="http://simpleicon.com/wp-content/uploads/Shopping-Cart-11.png" /></a>
-<% end %>
+<% end %> -->
 </h1>
 <h3> </h3>
 
@@ -25,7 +25,7 @@
     <!-- START:currency -->
           <span class="price">
             <%= number_to_currency(product.price) %>
-            <%= button_to 'Add to cart', line_items_path(product_id: product), class: 'button' %>
+            <%= button_to 'Add to cart', line_items_path(product_id: product), remote: true , class: 'button' %>
           </span>
     <!-- END:currency -->
         </div>

@@ -4,12 +4,21 @@
 
 /* START_HIGHLIGHT */
 .store {
+  background-color: #272b30;
   .button {
     color: #FFFFFF;
     background-color: #000000;
     border: 0;
     border-radius: 4px;
+    cursor: pointer;
   }
+  .button_side {
+      color: #000000;
+      background-color: #FFFFFF;
+      border: 0;
+      border-radius: 4px;
+      cursor: pointer;
+    }
   .button:hover {
     background-color: #272b30;
   }

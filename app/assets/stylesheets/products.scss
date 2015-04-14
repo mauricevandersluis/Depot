@@ -7,14 +7,31 @@
 
 .products {
   background-color: #272b30;
-  color: #FFFFFF;
+  color: #000000;
   table {
     border-collapse: collapse;
   }
-
+  .button {
+    color: #FFFFFF;
+    background-color: #000000;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .button_side {
+      color: #000000;
+      background-color: #FFFFFF;
+      border: 0;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  .button:hover {
+    background-color: #272b30;
+  }
   table tr td {
     padding: 5px;
     vertical-align: top;
+    color: #FFFFFF;
   }
 
   .list_image {

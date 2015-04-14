@@ -24,7 +24,11 @@
     <div id="side">
       <ul>
         <li><%= @time %></li>
-        <li>&nbsp;</li>
+      </ul>
+      <div id="cart">
+        <%= render @cart %>
+      </div>
+      <ul>
         <li><%= link_to "Home", store_index_path %></li>
         <li><%= link_to "Products", products_index_path %></li>
         <li><a href="http://www..../faq">Questions</a></li>

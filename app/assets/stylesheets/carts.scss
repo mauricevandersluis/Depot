@@ -8,8 +8,8 @@
 /* START_HIGHLIGHT */
 
 
-.carts {
-  background-color: #FFFFFF;
+.carts #side #cart{
+  background-color: #272b30;
   color: #000000;
   
   .item_price, .total_line {
@@ -49,7 +49,7 @@
   }
 
   .list_description {
-    width: 70%;
+    width: 60%;
 
     dl {
       margin: 0;
@@ -69,6 +69,7 @@
   }
 
   .list_actions {
+    width: 10%;
     font-size:    x-small;
     text-align:   right;
     padding-left: 1em;
@@ -84,7 +85,9 @@
   .list_line_odd {
     background-color:   #c8c8c8;
   }
-  span {
+  .button_line {
+    margin-bottom: 10px;
+    min-height: 15px;
     .button {
       color: #FFFFFF;
       background-color: #000000;
@@ -92,11 +95,19 @@
       border-radius: 4px;
       float: left;
       margin-right: 5px;
-      margin-top: 10px;
+      margin-top: 5px;
+      cursor: pointer;
     }
     .button:hover {
       background-color: #272b30;
-    }  
+    }
+    .button_side {
+      color: #000000;
+      background-color: #FFFFFF;
+      border: 0;
+      border-radius: 4px;
+      cursor: pointer;
+    }
   }
 }
 /* END_HIGHLIGHT */

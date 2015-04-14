@@ -1,0 +1,35 @@
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>Your Cart</h1>
+<table>
+  <% @cart.line_items.each do |item| %>
+    <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+      <td class="list_image_td">
+        <%= image_tag(item.product.image_url, class: 'list_image') %>
+      </td>
+      <td class="list_description">
+        <dl>
+          <dt><%= item.product.title %></dt>
+          <dd><%= truncate(strip_tags(item.product.description), length: 80) %></dd>
+        </dl>
+      </td>
+      <td class="list_ammount">Aantal: <%= item.quantity %></td>
+      <td class="item_price"><%= number_to_currency(item.total_price) %></td>
+      <td class="list_actions">
+        <%= link_to 'Delete', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </td>
+     </tr>    
+  <% end %>
+  <tr class="total_line">
+    <td class="total_text" colspan="4">Total</td>
+    <td class="total_cell"><%= number_to_currency(@cart.total_price) %></td>
+  </tr>
+
+</table>
+
+<div class="button_line">
+  <%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are you sure?' }, class: 'button' %> 
+  <%= button_to 'Back', store_index_path, class: 'button', :method => :get %>
+</div>
